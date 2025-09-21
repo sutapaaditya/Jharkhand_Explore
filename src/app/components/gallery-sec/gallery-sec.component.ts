@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-gallery-sec',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './gallery-sec.component.html',
   styleUrl: './gallery-sec.component.css'
 })
