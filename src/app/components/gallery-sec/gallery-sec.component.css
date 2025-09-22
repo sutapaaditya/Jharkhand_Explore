@@ -1,10 +1,23 @@
  :root{
     --card-bg: #ffffff;
     --muted: #6b7280;
-    --accent: #10b981;
+   --accent: #2D4111;
     --shadow: 0 6px 18px rgba(15,23,42,0.08);
     --radius: 14px;
   }
+
+ .gallery-contain{
+ display: flex;
+ }
+
+  .text {
+   text-align: center;
+   margin: 2rem 5rem;
+   color: var(--accent);
+   font-weight: 600;
+   font-family: "Montserrat", sans-serif;
+   font-size: 1.7rem;
+ }
 
  .card{
     width: 320px;
@@ -12,23 +25,32 @@
     border-radius:var(--radius);
     box-shadow:var(--shadow);
     overflow:hidden;
-    border: 1px solid rgba(15,23,42,0.04);
+    border: 2px solid rgba(15,23,42,0.24);
+   margin: 2rem 5rem;
   }
   .media{
     position:relative;
     height:140px;
     background: #ddd center/cover;
   }
+
+ .media:hover{
+   transform: scale(1.1);
+  z-index: 2;
+  filter:  opacity(0.8);
+ }
   .badge{
     position:absolute;
     top:10px;
     right:10px;
-    background:#10b981;
+    background:#2D4111;
     color:#fff;
-    font-size:12px;
+    font-size:1.6rem;
+   font-family: "Lato", sans-serif;
+   letter-spacing: 1px;
     padding:6px 10px;
     border-radius:999px;
-    box-shadow:0 4px 10px rgba(16,185,129,0.18);
+    box-shadow:0 4px 10px rgba(16,185,129,0.38);
     font-weight:600;
   }
   .content{
@@ -37,7 +59,8 @@
   .title{
     font-size:18px;
     font-weight:700;
-    color:#0f172a;
+    color:#062307;
+   font-family: "Montserrat", sans-serif;
     margin:0 0 6px 0;
   }
   .meta{
@@ -48,10 +71,12 @@
     font-size:13px;
     margin-bottom:10px;
   }
-  .meta svg{opacity:0.7; width:14px; height:14px;}
+  .meta svg{opacity:1.9; width:19px; height:19px;}
   .desc{
-    color:#374151;
-    font-size:13px;
+    color:#0A332D;
+    font-size:1.6rem;
+   font-family: "Lato", sans-serif;
+   font-weight: 600;
     line-height:1.35;
     margin-bottom:14px;
   }
@@ -72,12 +97,19 @@
   }
   .stars svg{width:18px;height:18px}
   .rating-num{font-weight:700;color:#111827;font-size:14px}
-  .learn{
-    color:#10b981;
-    font-weight:700;
-    font-size:13px;
-    text-decoration:none;
-  }
+ .learn{
+   color: black;
+   font-weight:700;
+   font-family: "Montserrat", sans-serif;
+   font-size:1.4rem;
+   border-radius: 3rem;
+   width: 10.2rem;
+   text-decoration: none;
+ }
+
+ .learn:hover{
+  text-decoration: underline;
+ }
   /* subtle mobile-friendly scale */
   @media (max-width:380px){
     .card{width:92vw}
